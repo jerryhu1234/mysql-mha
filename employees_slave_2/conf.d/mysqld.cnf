@@ -37,6 +37,8 @@ symbolic-links=0
 log_bin = /var/log/mysql/mysql-bin
 log_bin_index = /var/log/mysql/mysql-bin.index
 server_id = 183
+sync_binlog = 1
+innodb_flush_log_at_trx_commit = 2
 # slaves
 relay_log		= /var/log/mysql/relay-bin
 relay_log_index	= /var/log/mysql/relay-bin.index
@@ -45,5 +47,6 @@ enforce_gtid_consistency = ON
 gtid_mode = ON
 log_slave_updates = ON
 read_only = ON
+binlog_format = ROW
 master_info_repository = TABLE
 relay_log_info_repository = TABLE

@@ -33,6 +33,8 @@ log-error	= /var/log/mysql/error.log
 #bind-address	= 127.0.0.1
 # Disabling symbolic-links is recommended to prevent assorted security risks
 symbolic-links=0
+sync_binlog = 1
+innodb_flush_log_at_trx_commit = 2
 # replication
 log_bin = /var/log/mysql/mysql-bin
 log_bin_index = /var/log/mysql/mysql-bin.index
@@ -45,5 +47,6 @@ enforce_gtid_consistency = ON
 gtid_mode = ON
 log_slave_updates = ON
 read_only = ON
+binlog_format = ROW
 master_info_repository = TABLE
 relay_log_info_repository = TABLE

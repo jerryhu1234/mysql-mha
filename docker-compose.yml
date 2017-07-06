@@ -21,7 +21,7 @@ services:
             - "3406:3306"
         volumes:
             - "./employees_db/:/docker-entrypoint-initdb.d/:ro"
-          #  - "./employees_master/lib/:/var/lib/mysql/"
+            - "./employees_master/lib/:/var/lib/mysql/"
           #  - "./employees_master/log/:/var/log/mysql/"
             - "./employees_master/conf.d/:/etc/mysql/mysql.conf.d/"
         volumes_from:
@@ -35,12 +35,11 @@ services:
         image: prontera/mha_node
         depends_on:
             - master
-            - slave_2
         ports:
             - "3407:3306"
         volumes:
-          #  - "./employees_slave_1/lib/:/var/lib/mysql/"
-          #  - "./employees_slave_1/log/:/var/log/mysql/"
+            - "./employees_slave_1/lib/:/var/lib/mysql/"
+         #   - "./employees_slave_1/log/:/var/log/mysql/"
             - "./employees_slave_1/conf.d/:/etc/mysql/mysql.conf.d/"
         volumes_from:
             - mha_share
@@ -53,8 +52,8 @@ services:
         ports:
             - "3408:3306"
         volumes:
-          #  - "./employees_slave_1/lib/:/var/lib/mysql/"
-          #  - "./employees_slave_1/log/:/var/log/mysql/"
+            - "./employees_slave_2/lib/:/var/lib/mysql/"
+         #   - "./employees_slave_2/log/:/var/log/mysql/"
             - "./employees_slave_2/conf.d/:/etc/mysql/mysql.conf.d/"
         volumes_from:
             - mha_share
