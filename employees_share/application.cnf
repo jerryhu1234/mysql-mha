@@ -2,6 +2,8 @@
 manager_workdir=/var/log/masterha
 remote_workdir=/var/log/masterha
 master_binlog_dir=/var/log/mysql
+master_ip_failover_script= /usr/local/bin/master_ip_failover
+master_ip_online_change_script= /usr/local/bin/master_ip_online_change
 ping_interval=2
 ssh_user=root
 # generated
@@ -9,12 +11,15 @@ user=mha_user
 password=ins924a
 repl_user=repl
 repl_password=asnei931
+report_script=/usr/local/send_report
+secondary_check_script= /usr/local/bin/masterha_secondary_check -s slave_1 -s slave_2
 [server1]
 hostname=master
 
 [server2]
 hostname=slave_1
 candidate_master=1
+check_repl_delay=0
 [server3]
 hostname=slave_2
 no_master=1
