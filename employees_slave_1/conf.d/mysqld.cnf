@@ -46,7 +46,13 @@ relay_log_info_file	= /var/log/mysql/relay-bin.info
 enforce_gtid_consistency = ON
 gtid_mode = ON
 log_slave_updates = ON
-read_only = ON
+# read_only = ON //以防变成主库时，不能写数据，改为set
 binlog_format = ROW
 master_info_repository = TABLE
 relay_log_info_repository = TABLE
+skip-slave-start
+relay_log_purge=0
+# semi_replication
+plugin-load = "rpl_semi_sync_master=semisync_master.so;rpl_semi_sync_slave=semisync_slave.so"
+#rpl-semi-sync-master-enabled = 1
+rpl-semi-sync-slave-enabled = 1

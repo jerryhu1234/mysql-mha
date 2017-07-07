@@ -1,5 +1,5 @@
 #!/bin/bash
-# usage: 生成MySQL的复制账户
+# usage: 每个数据节点生成MySQL的复制账户
 # author: prontera@github
 
 #set -x

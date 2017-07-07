@@ -43,3 +43,7 @@ binlog_format = row
 server_id = 101
 gtid_mode = ON
 enforce_gtid_consistency = ON
+# semi_replication
+plugin-load = "rpl_semi_sync_master=semisync_master.so;rpl_semi_sync_slave=semisync_slave.so"
+rpl-semi-sync-master-enabled = 1
+rpl-semi-sync-slave-enabled = 1

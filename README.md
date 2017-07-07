@@ -2,7 +2,8 @@
 
 基于Docker 1.13.1之上构建的MySQL MHA Docker Compose Project
 
-可快速启动GTID模式下的MasterHA集群, 主用于MySQL与Docker的学习研究
+可快速启动GTID模式下的MasterHA集群,
+2017.7.7 增加半同步，优化slave的relay_log_purge=0,增加定时清理relay脚本
 
 ## 构建环境
 
@@ -30,6 +31,8 @@
 `master` - Docker compose中名为`master`的service, 主库容器默认映射端口3406
 
 `slave_1` - Docker compose中名为`slave_1`的service, 从库容器默认映射端口3407
+
+`slave_2` - Docker compose中名为`slave_2`的service, 从库容器默认映射端口3408
 
 `manager` - Docker compose中名为`manager`的service, 作为MHA manager
 
@@ -111,6 +114,7 @@
    Starting mha_mha_node_1
    mha_master_1 is up-to-date
    mha_slave_1_1 is up-to-date
+   mha_slave_2_1 is up-to-date
    mha_manager_1 is up-to-date
    >>> Setting ssh...
    fd9686976e61 initializing SSH...
@@ -130,6 +134,7 @@
    mha configuration "/mha_share/application.cnf" is not initialized.
    added host "master" to mha configuration file.
    added host "slave_1" to mha configuration file.
+   added host "slave_2" to mha configuration file.
    **********************************************
    checking mha ssh...
    Wed Feb 15 11:04:08 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.

@@ -52,7 +52,7 @@ aprint "Creating mysql user for replication named 'repl' on master container..."
 docker-compose exec master /mha_share/create-repl-account.sh
 
 aprint "Configuring replication with GTID mode..."
-#只对从节点进行配置repi
+#只对从节点进行配置replication
 for c_id in $(docker-compose ps | sed -n '3,$p' | grep slave | sed -n '/Up/p' | awk '{print $1}'); do
  for c_name in ${service_name[*]}; do
     if [[ "$c_name" =~ slave_.* ]] && [[ "$c_id" =~ "$c_name" ]]; then

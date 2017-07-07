@@ -147,3 +147,284 @@ Thu Jul  6 09:59:37 2017 - [info] Set master ping interval 2 seconds.
 Thu Jul  6 09:59:37 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
 Thu Jul  6 09:59:37 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
 Thu Jul  6 09:59:37 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 02:29:26 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 02:29:26 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 02:29:26 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 02:29:26 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 02:29:26 2017 - [info] Dead Servers:
+Fri Jul  7 02:29:26 2017 - [info] Alive Servers:
+Fri Jul  7 02:29:26 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 02:29:26 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 02:29:26 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 02:29:26 2017 - [info] Alive Slaves:
+Fri Jul  7 02:29:26 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 02:29:26 2017 - [info]     GTID ON
+Fri Jul  7 02:29:26 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 02:29:26 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 02:29:26 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 02:29:26 2017 - [info]     GTID ON
+Fri Jul  7 02:29:26 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 02:29:26 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 02:29:26 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 02:29:26 2017 - [info] Checking slave configurations..
+Fri Jul  7 02:29:26 2017 - [warning]  relay_log_purge=0 is not set on slave slave_1(172.21.0.3:3306).
+Fri Jul  7 02:29:26 2017 - [warning]  relay_log_purge=0 is not set on slave slave_2(172.21.0.4:3306).
+Fri Jul  7 02:29:26 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 02:29:26 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 02:29:26 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 02:29:26 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 02:29:26 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 02:29:26 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 02:29:26 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 02:29:26 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 02:29:26 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 02:29:26 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 02:29:26 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 02:29:26 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 02:29:26 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 02:49:39 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 02:49:39 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 02:49:39 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 02:49:39 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 02:49:39 2017 - [info] Dead Servers:
+Fri Jul  7 02:49:39 2017 - [info] Alive Servers:
+Fri Jul  7 02:49:39 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 02:49:39 2017 - [info]   slave_1(172.21.0.4:3306)
+Fri Jul  7 02:49:39 2017 - [info]   slave_2(172.21.0.3:3306)
+Fri Jul  7 02:49:39 2017 - [info] Alive Slaves:
+Fri Jul  7 02:49:39 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 02:49:39 2017 - [info]     GTID ON
+Fri Jul  7 02:49:39 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 02:49:39 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 02:49:39 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 02:49:39 2017 - [info]     GTID ON
+Fri Jul  7 02:49:39 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 02:49:39 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 02:49:39 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 02:49:39 2017 - [info] Checking slave configurations..
+Fri Jul  7 02:49:39 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 02:49:39 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 02:49:39 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 02:49:39 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 02:49:39 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 02:49:39 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 02:49:39 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 02:49:39 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 02:49:39 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 02:49:39 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 02:49:39 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 02:49:39 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 02:49:39 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 04:07:52 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:07:52 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:07:52 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:07:52 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:07:52 2017 - [info] Dead Servers:
+Fri Jul  7 04:07:52 2017 - [info] Alive Servers:
+Fri Jul  7 04:07:52 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:07:52 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 04:07:52 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 04:07:52 2017 - [info] Alive Slaves:
+Fri Jul  7 04:07:52 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:07:52 2017 - [info]     GTID ON
+Fri Jul  7 04:07:52 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:07:52 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:07:52 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:07:52 2017 - [info]     GTID ON
+Fri Jul  7 04:07:52 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:07:52 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:07:52 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:07:52 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:07:52 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:07:52 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:07:52 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:07:52 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:07:52 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:07:52 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:07:52 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:07:52 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:07:52 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:07:52 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:07:52 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:07:52 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:07:52 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 04:29:55 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:29:55 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:29:55 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:29:55 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:29:55 2017 - [warning] /var/log/masterha/application.master_status.health already exists. You might have killed manager with SIGKILL(-9), may run two or more monitoring process for the same application, or use the same working directory. Check for details, and consider setting --workdir separately.
+Fri Jul  7 04:29:55 2017 - [info] Dead Servers:
+Fri Jul  7 04:29:55 2017 - [info] Alive Servers:
+Fri Jul  7 04:29:55 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:29:55 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 04:29:55 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 04:29:55 2017 - [info] Alive Slaves:
+Fri Jul  7 04:29:55 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:29:55 2017 - [info]     GTID ON
+Fri Jul  7 04:29:55 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:29:55 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:29:55 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:29:55 2017 - [info]     GTID ON
+Fri Jul  7 04:29:55 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:29:55 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:29:55 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:29:55 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:29:55 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:29:55 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:29:55 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:29:55 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:29:55 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:29:55 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:29:55 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:29:55 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:29:55 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:29:55 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:29:55 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:29:55 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:30:03 2017 - [warning] Got error when monitoring master:  at /usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm line 464.
+Fri Jul  7 04:30:03 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln466] Target master's advisory lock is already held by someone. Please check whether you monitor the same master from multiple monitoring processes.
+Fri Jul  7 04:30:03 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln486] Error happened on health checking.  at /usr/local/bin/masterha_manager line 50.
+Fri Jul  7 04:30:03 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln500] Error happened on monitoring servers.
+Fri Jul  7 04:30:03 2017 - [info] Got exit code 1 (Not master dead).
+Fri Jul  7 04:31:11 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:31:11 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:31:11 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:31:11 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:31:11 2017 - [warning] /var/log/masterha/application.master_status.health already exists. You might have killed manager with SIGKILL(-9), may run two or more monitoring process for the same application, or use the same working directory. Check for details, and consider setting --workdir separately.
+Fri Jul  7 04:31:11 2017 - [info] Dead Servers:
+Fri Jul  7 04:31:11 2017 - [info] Alive Servers:
+Fri Jul  7 04:31:11 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:31:11 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 04:31:11 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 04:31:11 2017 - [info] Alive Slaves:
+Fri Jul  7 04:31:11 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:31:11 2017 - [info]     GTID ON
+Fri Jul  7 04:31:11 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:31:11 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:31:11 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:31:11 2017 - [info]     GTID ON
+Fri Jul  7 04:31:11 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:31:11 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:31:11 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:31:11 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:31:11 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:31:11 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:31:11 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:31:11 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:31:11 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:31:11 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:31:11 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:31:11 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:31:11 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:31:11 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:31:11 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:31:11 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:31:19 2017 - [warning] Got error when monitoring master:  at /usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm line 464.
+Fri Jul  7 04:31:19 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln466] Target master's advisory lock is already held by someone. Please check whether you monitor the same master from multiple monitoring processes.
+Fri Jul  7 04:31:19 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln486] Error happened on health checking.  at /usr/local/bin/masterha_manager line 50.
+Fri Jul  7 04:31:19 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln500] Error happened on monitoring servers.
+Fri Jul  7 04:31:19 2017 - [info] Got exit code 1 (Not master dead).
+Fri Jul  7 04:33:47 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:33:47 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:33:47 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:33:47 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:33:47 2017 - [warning] /var/log/masterha/application.master_status.health already exists. You might have killed manager with SIGKILL(-9), may run two or more monitoring process for the same application, or use the same working directory. Check for details, and consider setting --workdir separately.
+Fri Jul  7 04:33:47 2017 - [info] Dead Servers:
+Fri Jul  7 04:33:47 2017 - [info] Alive Servers:
+Fri Jul  7 04:33:47 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:33:47 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 04:33:47 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 04:33:47 2017 - [info] Alive Slaves:
+Fri Jul  7 04:33:47 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:33:47 2017 - [info]     GTID ON
+Fri Jul  7 04:33:47 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:33:47 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:33:47 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:33:47 2017 - [info]     GTID ON
+Fri Jul  7 04:33:47 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:33:47 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:33:47 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:33:47 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:33:47 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:33:47 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:33:47 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:33:47 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:33:47 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:33:47 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:33:47 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:33:47 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:33:47 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:33:47 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:33:47 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:33:47 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:33:55 2017 - [warning] Got error when monitoring master:  at /usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm line 464.
+Fri Jul  7 04:33:55 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln466] Target master's advisory lock is already held by someone. Please check whether you monitor the same master from multiple monitoring processes.
+Fri Jul  7 04:33:55 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln486] Error happened on health checking.  at /usr/local/bin/masterha_manager line 50.
+Fri Jul  7 04:33:55 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln500] Error happened on monitoring servers.
+Fri Jul  7 04:33:55 2017 - [info] Got exit code 1 (Not master dead).
+Fri Jul  7 04:36:25 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:36:25 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:36:25 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:36:25 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:36:25 2017 - [warning] /var/log/masterha/application.master_status.health already exists. You might have killed manager with SIGKILL(-9), may run two or more monitoring process for the same application, or use the same working directory. Check for details, and consider setting --workdir separately.
+Fri Jul  7 04:36:25 2017 - [info] Dead Servers:
+Fri Jul  7 04:36:25 2017 - [info] Alive Servers:
+Fri Jul  7 04:36:25 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:36:25 2017 - [info]   slave_1(172.21.0.3:3306)
+Fri Jul  7 04:36:25 2017 - [info]   slave_2(172.21.0.4:3306)
+Fri Jul  7 04:36:25 2017 - [info] Alive Slaves:
+Fri Jul  7 04:36:25 2017 - [info]   slave_1(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:36:25 2017 - [info]     GTID ON
+Fri Jul  7 04:36:25 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:36:25 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:36:25 2017 - [info]   slave_2(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:36:25 2017 - [info]     GTID ON
+Fri Jul  7 04:36:25 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:36:25 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:36:25 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:36:25 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:36:25 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:36:25 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:36:25 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:36:25 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:36:25 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:36:25 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:36:25 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:36:25 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:36:25 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:36:25 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:36:25 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:36:25 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:36:33 2017 - [warning] Got error when monitoring master:  at /usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm line 464.
+Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln466] Target master's advisory lock is already held by someone. Please check whether you monitor the same master from multiple monitoring processes.
+Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln486] Error happened on health checking.  at /usr/local/bin/masterha_manager line 50.
+Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln500] Error happened on monitoring servers.
+Fri Jul  7 04:36:33 2017 - [info] Got exit code 1 (Not master dead).

@@ -64,7 +64,7 @@ masterha_check_repl --conf="$file_cnf"
 if [ "$(ps aux | pgrep '/usr/local/bin/masterha_manager' || echo $?)" == 1 ]; then
     echo "**********************************************"
     echo "starting mha manager with file \"$file_cnf\"..."
-    nohup masterha_manager --conf="$file_cnf" >>$dir_cnf/mha.log &
+    nohup masterha_manager --conf="$file_cnf" --remove_dead_master_conf --ignore_last_failover >>$dir_cnf/mha.log &
     sleep 1
 else
     echo "**********************************************"
