@@ -154,6 +154,19 @@
 
    > NOTE: 首次运行时如果不预热而直接调用start.sh脚本的话, 则会引起MySQL未完成初始化而造成构建主从复制链路出错, 如果是数据库已经经过初始化则不需要进行预热
 
+## 故障转移测试
+application: MySQL Master failover master to slave_1 succeeded
+
+Master master is down!
+
+Check MHA Manager logs at a957279d1656 for details.
+
+Started automated(non-interactive) failover.
+Selected slave_1 as a new master.
+slave_1: OK: Applying all logs succeeded.
+slave_2: OK: Slave started, replicating from slave_1.
+slave_1: Resetting slave info succeeded.
+Master failover to slave_1(172.21.0.4:3306) completed successfully.
 ## 注意事项
 
 1. 首次运行时请先运行`docker-compose up -d`进行MySQL的初始化

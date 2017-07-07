@@ -428,3 +428,252 @@ Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonito
 Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln486] Error happened on health checking.  at /usr/local/bin/masterha_manager line 50.
 Fri Jul  7 04:36:33 2017 - [error][/usr/local/share/perl/5.20.2/MHA/MasterMonitor.pm, ln500] Error happened on monitoring servers.
 Fri Jul  7 04:36:33 2017 - [info] Got exit code 1 (Not master dead).
+Fri Jul  7 04:42:38 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 04:42:38 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 04:42:38 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 04:42:38 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 04:42:38 2017 - [info] Dead Servers:
+Fri Jul  7 04:42:38 2017 - [info] Alive Servers:
+Fri Jul  7 04:42:38 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 04:42:38 2017 - [info]   slave_1(172.21.0.4:3306)
+Fri Jul  7 04:42:38 2017 - [info]   slave_2(172.21.0.3:3306)
+Fri Jul  7 04:42:38 2017 - [info] Alive Slaves:
+Fri Jul  7 04:42:38 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:42:38 2017 - [info]     GTID ON
+Fri Jul  7 04:42:38 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:42:38 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:42:38 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 04:42:38 2017 - [info]     GTID ON
+Fri Jul  7 04:42:38 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 04:42:38 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 04:42:38 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 04:42:38 2017 - [info] Checking slave configurations..
+Fri Jul  7 04:42:38 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 04:42:38 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 04:42:38 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 04:42:38 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 04:42:38 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 04:42:38 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 04:42:38 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 04:42:38 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 04:42:38 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 04:42:38 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 04:42:38 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 04:42:38 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 04:42:38 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 05:30:47 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 05:30:47 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 05:30:47 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 05:30:47 2017 - [info] MHA::MasterMonitor version 0.56.
+Fri Jul  7 05:30:47 2017 - [info] Dead Servers:
+Fri Jul  7 05:30:47 2017 - [info] Alive Servers:
+Fri Jul  7 05:30:47 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 05:30:47 2017 - [info]   slave_1(172.21.0.4:3306)
+Fri Jul  7 05:30:47 2017 - [info]   slave_2(172.21.0.3:3306)
+Fri Jul  7 05:30:47 2017 - [info] Alive Slaves:
+Fri Jul  7 05:30:47 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 05:30:47 2017 - [info]     GTID ON
+Fri Jul  7 05:30:47 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 05:30:47 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 05:30:47 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 05:30:47 2017 - [info]     GTID ON
+Fri Jul  7 05:30:47 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 05:30:47 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 05:30:47 2017 - [info] Current Alive Master: master(172.21.0.2:3306)
+Fri Jul  7 05:30:47 2017 - [info] Checking slave configurations..
+Fri Jul  7 05:30:47 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 05:30:47 2017 - [info]  binlog_do_db= , binlog_ignore_db= 
+Fri Jul  7 05:30:47 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 05:30:47 2017 - [info] GTID is supported. Skipping all SSH and Node package checking.
+Fri Jul  7 05:30:47 2017 - [info] Checking SSH publickey authentication settings on the current master..
+Fri Jul  7 05:30:47 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 05:30:47 2017 - [info] 
+master (current master)
+ +--slave_1
+ +--slave_2
+
+Fri Jul  7 05:30:47 2017 - [warning] master_ip_failover_script is not defined.
+Fri Jul  7 05:30:47 2017 - [warning] shutdown_script is not defined.
+Fri Jul  7 05:30:47 2017 - [info] Set master ping interval 2 seconds.
+Fri Jul  7 05:30:47 2017 - [warning] secondary_check_script is not defined. It is highly recommended setting it to check master reachability from two or more routes.
+Fri Jul  7 05:30:47 2017 - [info] Starting ping health check on master(172.21.0.2:3306)..
+Fri Jul  7 05:30:47 2017 - [info] Ping(SELECT) succeeded, waiting until MySQL doesn't respond..
+Fri Jul  7 10:06:03 2017 - [warning] Got error on MySQL select ping: 2006 (MySQL server has gone away)
+Fri Jul  7 10:06:03 2017 - [info] Executing SSH check script: exit 0
+Fri Jul  7 10:06:03 2017 - [info] HealthCheck: SSH to master is reachable.
+Fri Jul  7 10:06:05 2017 - [warning] Got error on MySQL connect: 2003 (Can't connect to MySQL server on '172.21.0.2' (111))
+Fri Jul  7 10:06:05 2017 - [warning] Connection failed 1 time(s)..
+Fri Jul  7 10:06:07 2017 - [warning] Got error on MySQL connect: 2003 (Can't connect to MySQL server on '172.21.0.2' (111))
+Fri Jul  7 10:06:07 2017 - [warning] Connection failed 2 time(s)..
+Fri Jul  7 10:06:09 2017 - [warning] Got error on MySQL connect: 2003 (Can't connect to MySQL server on '172.21.0.2' (111))
+Fri Jul  7 10:06:09 2017 - [warning] Connection failed 3 time(s)..
+Fri Jul  7 10:06:09 2017 - [warning] Master is not reachable from health checker!
+Fri Jul  7 10:06:09 2017 - [warning] Master master(172.21.0.2:3306) is not reachable!
+Fri Jul  7 10:06:09 2017 - [warning] SSH is reachable.
+Fri Jul  7 10:06:09 2017 - [info] Connecting to a master server failed. Reading configuration file /etc/masterha_default.cnf and /mha_share/application.cnf again, and trying to connect to all servers to check server status..
+Fri Jul  7 10:06:09 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 10:06:09 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 10:06:09 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 10:06:09 2017 - [info] Dead Servers:
+Fri Jul  7 10:06:09 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info] Alive Servers:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)
+Fri Jul  7 10:06:09 2017 - [info] Alive Slaves:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info] Checking slave configurations..
+Fri Jul  7 10:06:09 2017 - [info] Checking replication filtering settings..
+Fri Jul  7 10:06:09 2017 - [info]  Replication filtering check ok.
+Fri Jul  7 10:06:09 2017 - [info] Master is down!
+Fri Jul  7 10:06:09 2017 - [info] Terminating monitoring script.
+Fri Jul  7 10:06:09 2017 - [info] Got exit code 20 (Master dead).
+Fri Jul  7 10:06:09 2017 - [warning] Global configuration file /etc/masterha_default.cnf not found. Skipping.
+Fri Jul  7 10:06:09 2017 - [info] Reading application default configurations from /mha_share/application.cnf..
+Fri Jul  7 10:06:09 2017 - [info] Reading server configurations from /mha_share/application.cnf..
+Fri Jul  7 10:06:09 2017 - [info] MHA::MasterFailover version 0.56.
+Fri Jul  7 10:06:09 2017 - [info] Starting master failover.
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 1: Configuration Check Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] Dead Servers:
+Fri Jul  7 10:06:09 2017 - [info]   master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info] Checking master reachability via mysql(double check)..
+Fri Jul  7 10:06:09 2017 - [info]  ok.
+Fri Jul  7 10:06:09 2017 - [info] Alive Servers:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)
+Fri Jul  7 10:06:09 2017 - [info] Alive Slaves:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info] ** Phase 1: Configuration Check Phase completed.
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 2: Dead Master Shutdown Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] Forcing shutdown so that applications never connect to the current master..
+Fri Jul  7 10:06:09 2017 - [warning] master_ip_failover_script is not set. Skipping invalidating dead master ip address.
+Fri Jul  7 10:06:09 2017 - [warning] shutdown_script is not set. Skipping explicit shutting down of the dead master.
+Fri Jul  7 10:06:09 2017 - [info] * Phase 2: Dead Master Shutdown Phase completed.
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 3: Master Recovery Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 3.1: Getting Latest Slaves Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] The latest binary log file/position on all slaves is mysql-bin.000003:2257
+Fri Jul  7 10:06:09 2017 - [info] Retrieved Gtid Set: 53854749-62d5-11e7-879c-0242ac150002:1-27
+Fri Jul  7 10:06:09 2017 - [info] Latest slaves (Slaves that received relay log files to the latest):
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info] The oldest binary log file/position on all slaves is mysql-bin.000003:2257
+Fri Jul  7 10:06:09 2017 - [info] Retrieved Gtid Set: 53854749-62d5-11e7-879c-0242ac150002:1-27
+Fri Jul  7 10:06:09 2017 - [info] Oldest slaves:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 3.3: Determining New Master Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] Searching new master from slaves..
+Fri Jul  7 10:06:09 2017 - [info]  Candidate masters from the configuration file:
+Fri Jul  7 10:06:09 2017 - [info]   slave_1(172.21.0.4:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]   slave_2(172.21.0.3:3306)  Version=5.7.17-log (oldest major version between slaves) log-bin:enabled
+Fri Jul  7 10:06:09 2017 - [info]     GTID ON
+Fri Jul  7 10:06:09 2017 - [info]     Replicating from master(172.21.0.2:3306)
+Fri Jul  7 10:06:09 2017 - [info]     Primary candidate for the new Master (candidate_master is set)
+Fri Jul  7 10:06:09 2017 - [info]  Non-candidate masters:
+Fri Jul  7 10:06:09 2017 - [info]  Searching from candidate_master slaves which have received the latest relay log events..
+Fri Jul  7 10:06:09 2017 - [info] New master is slave_1(172.21.0.4:3306)
+Fri Jul  7 10:06:09 2017 - [info] Starting master failover..
+Fri Jul  7 10:06:09 2017 - [info] 
+From:
+master (current master)
+ +--slave_1
+ +--slave_2
+
+To:
+slave_1 (new master)
+ +--slave_2
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 3.3: New Master Recovery Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info]  Waiting all logs to be applied.. 
+Fri Jul  7 10:06:09 2017 - [info]   done.
+Fri Jul  7 10:06:09 2017 - [info] Getting new master's binlog name and position..
+Fri Jul  7 10:06:09 2017 - [info]  mysql-bin.000003:3004859
+Fri Jul  7 10:06:09 2017 - [info]  All other slaves should start replication from here. Statement should be: CHANGE MASTER TO MASTER_HOST='slave_1 or 172.21.0.4', MASTER_PORT=3306, MASTER_AUTO_POSITION=1, MASTER_USER='repl', MASTER_PASSWORD='xxx';
+Fri Jul  7 10:06:09 2017 - [info] Master Recovery succeeded. File:Pos:Exec_Gtid_Set: mysql-bin.000003, 3004859, 53854749-62d5-11e7-879c-0242ac150002:1-27,
+54adebdb-62d5-11e7-873e-0242ac150004:1-6
+Fri Jul  7 10:06:09 2017 - [warning] master_ip_failover_script is not set. Skipping taking over new master ip address.
+Fri Jul  7 10:06:09 2017 - [info] Setting read_only=0 on slave_1(172.21.0.4:3306)..
+Fri Jul  7 10:06:09 2017 - [info]  ok.
+Fri Jul  7 10:06:09 2017 - [info] ** Finished master recovery successfully.
+Fri Jul  7 10:06:09 2017 - [info] * Phase 3: Master Recovery Phase completed.
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 4: Slaves Recovery Phase..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] * Phase 4.1: Starting Slaves in parallel..
+Fri Jul  7 10:06:09 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info] -- Slave recovery on host slave_2(172.21.0.3:3306) started, pid: 8610. Check tmp log /var/log/masterha/slave_2_3306_20170707100609.log if it takes time..
+Fri Jul  7 10:06:10 2017 - [info] 
+Fri Jul  7 10:06:10 2017 - [info] Log messages from slave_2 ...
+Fri Jul  7 10:06:10 2017 - [info] 
+Fri Jul  7 10:06:09 2017 - [info]  Resetting slave slave_2(172.21.0.3:3306) and starting replication from the new master slave_1(172.21.0.4:3306)..
+Fri Jul  7 10:06:09 2017 - [info]  Executed CHANGE MASTER.
+Fri Jul  7 10:06:10 2017 - [info]  Slave started.
+Fri Jul  7 10:06:10 2017 - [info] End of log messages from slave_2.
+Fri Jul  7 10:06:10 2017 - [info] -- Slave on host slave_2(172.21.0.3:3306) started.
+Fri Jul  7 10:06:10 2017 - [info] All new slave servers recovered successfully.
+Fri Jul  7 10:06:10 2017 - [info] 
+Fri Jul  7 10:06:10 2017 - [info] * Phase 5: New master cleanup phase..
+Fri Jul  7 10:06:10 2017 - [info] 
+Fri Jul  7 10:06:10 2017 - [info] Resetting slave info on the new master..
+Fri Jul  7 10:06:10 2017 - [info]  slave_1: Resetting slave info succeeded.
+Fri Jul  7 10:06:10 2017 - [info] Master failover to slave_1(172.21.0.4:3306) completed successfully.
+Fri Jul  7 10:06:10 2017 - [info] Deleted server1 entry from /mha_share/application.cnf .
+Fri Jul  7 10:06:10 2017 - [info] 
+
+----- Failover Report -----
+
+application: MySQL Master failover master to slave_1 succeeded
+
+Master master is down!
+
+Check MHA Manager logs at a957279d1656 for details.
+
+Started automated(non-interactive) failover.
+Selected slave_1 as a new master.
+slave_1: OK: Applying all logs succeeded.
+slave_2: OK: Slave started, replicating from slave_1.
+slave_1: Resetting slave info succeeded.
+Master failover to slave_1(172.21.0.4:3306) completed successfully.
